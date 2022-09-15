@@ -10,4 +10,8 @@
         }
       }
     }
-  }
+}
+{
+  "route": "/",
+  "redirect": "/.auth/login/aad"
+}
