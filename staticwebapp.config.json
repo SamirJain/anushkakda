@@ -1,4 +1,10 @@
 {
+   "routes": [
+        {
+            "route": "/authenticated/*",
+            "allowedRoles": [ "authenticated" ]
+        }
+    ],
     "auth": {
       "identityProviders": {
         "azureActiveDirectory": {
@@ -10,8 +16,4 @@
         }
       }
     }
-}
-{
-  "route": "/",
-  "redirect": "/.auth/login/aad"
 }
